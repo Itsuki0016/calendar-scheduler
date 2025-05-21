@@ -2,16 +2,17 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>日程調整カレンダー</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
     <link href="./assets/style.css" rel="stylesheet">
 </head>
-<body class="p-4">
+<body class="p-3">
 
     <div class="container">
-        <h1 class="mb-4">📅 日程調整カレンダー</h1>
-        <div id="calendar"></div>
+        <h1 class="text-center mb-4 display-6">📅 日程調整カレンダー</h1>
+        <div id="calendar" class="mb-5"></div>
     </div>
 
     <!-- モーダル（予定追加） -->
@@ -45,9 +46,9 @@
         </div>
     </div>
 
+    <!-- JS読み込み -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
     <script src="./assets/calendar.js"></script>
 </body>
 </html>
-
