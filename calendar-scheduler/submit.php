@@ -33,3 +33,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
     die('不正なアクセスです。');
 }
+?>
