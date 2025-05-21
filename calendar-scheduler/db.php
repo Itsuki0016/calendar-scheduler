@@ -1,6 +1,6 @@
 <?php
 $host = 'mysql3108.db.sakura.ne.jp';     // さくらのDBホスト名（コントロールパネルで確認）
-$dbname = 'blackbathroom_db';               // 例: yourname_db（コントロールパネルで確認）
+$dbname = 'blackbathroom_calendar-scheduler';               // 例: yourname_db（コントロールパネルで確認）
 $user = 'blackbathroom_calrendar';                    // DBユーザー名（通常、接頭にユーザーIDが付く）
 $pass = 'blackbathroom05';                   // 設定したパスワード
 
