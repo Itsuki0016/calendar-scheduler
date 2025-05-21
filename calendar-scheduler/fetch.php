@@ -30,3 +30,11 @@ try {
     echo json_encode(['error' => 'データ取得に失敗しました: ' . $e->getMessage()]);
     exit;
 }
+
+$events[] = [
+    'id' => $row['id'], // ← 追加
+    'title' => "{$row['username']}：{$row['title']}",
+    'start' => $row['date'],
+    'color' => $row['deadline'] && $row['deadline'] < date('Y-m-d') ? '#999999' : null
+];
+
