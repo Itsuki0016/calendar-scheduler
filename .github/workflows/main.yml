@@ -3,7 +3,7 @@ name: Deploy to Sakura Internet
 on:
   push:
     branches:
-      - master  # ← あなたが使っているブランチ名が「main」ならここを修正
+      - main  # ← あなたが使っているブランチ名が「main」ならここを修正
 
 jobs:
   ftp-deploy:
