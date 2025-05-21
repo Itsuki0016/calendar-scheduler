@@ -1,1 +1,1 @@
-# calendar-scheduler
+# PHP Calendar Scheduler
