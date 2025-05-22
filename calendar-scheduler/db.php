@@ -1,13 +1,14 @@
 <?php
-$host = 'mysql3108.db.sakura.ne.jp';     // さくらのDBホスト名（コントロールパネルで確認）
-$dbname = 'blackbathroom_calendar';               // 例: yourname_db（コントロールパネルで確認）
-$user = 'blackbathroom_calendar';                    // DBユーザー名（通常、接頭にユーザーIDが付く）
-$pass = 'blackbathroom05';                   // 設定したパスワード
+$env = parse_ini_file(__DIR__ . '/../local.env'); 
+
+$host = $env['DB_HOST'];
+$dbname = $env['DB_NAME'];
+$user = $env['DB_USER'];
+$pass = $env['DB_PASS'];
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "✅ 接続成功！";
 } catch (PDOException $e) {
-    echo "❌ 接続失敗: " . $e->getMessage();
+    die('データベース接続失敗: ' . $e->getMessage());
 }
