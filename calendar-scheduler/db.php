@@ -1,5 +1,5 @@
 <?php
-$env = parse_ini_file(__DIR__ . '/../local.env'); 
+$env = parse_ini_file(__DIR__ . 'local.env'); 
 
 $host = $env['DB_HOST'];
 $dbname = $env['DB_NAME'];
