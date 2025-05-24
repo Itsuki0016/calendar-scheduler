@@ -3,11 +3,11 @@ name: Deploy to Sakura Internet
 on:
   push:
     branches:
-      - main  # ← ブランチ名に注意
+      - main
 
 jobs:
   ftp-deploy:
-    name: 📦 FTP Deploy
+    name: 📆 FTP Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -22,4 +22,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_TARGET_DIR }}/
           local-dir: ./
-          protocol: ftp  # ← ✅ これを追加（明示的に平文FTP）
+          protocol: ftp
+          log-level: verbose
