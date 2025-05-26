@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>カレンダースケジューラー</title>
-    <link rel="stylesheet" href="../public/assets/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
     <h1>スケジュール管理</h1>
     <table id="calendar"></table>
 
-    <script src="../public/assets/calendar.js"></script>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modal-date"></h2>
+            <ul id="event-list"></ul>
+            <input type="text" id="event-input" placeholder="予定を入力">
+            <button id="save-event">追加</button>
+            <button id="close-modal">閉じる</button>
+        </div>
+    </div>
+
+    <script src="/assets/calendar.js"></script>
 </body>
 </html>
